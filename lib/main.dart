@@ -136,17 +136,9 @@ class MyCustomFormState extends State<MyCustomForm> {
             child: ElevatedButton(
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
-                  showDialog(
-                    context: context,
-                    builder: (context) {
-                      return AlertDialog(
-                        // Retrieve the text that the user has entered by using the
-                        // TextEditingController.
-                        content: Text("Name: ${name.text}\n"
-                            "Age: ${age.text}\n"
-                            "Email Address: ${email.text}"),
-                      );
-                    },
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const CheckPage())
                   );
                 }
               },
@@ -154,6 +146,27 @@ class MyCustomFormState extends State<MyCustomForm> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class CheckPage extends StatelessWidget {
+  const CheckPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Registration Check'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text('Go back!'),
+        ),
       ),
     );
   }
