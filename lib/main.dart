@@ -50,6 +50,14 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+class Registration {
+  final String name;
+  final String age;
+  final String email;
+
+  const Registration(this.name, this.age, this.email);
+}
+
 class MyCustomForm extends StatefulWidget {
   const MyCustomForm({super.key});
 
@@ -136,9 +144,13 @@ class MyCustomFormState extends State<MyCustomForm> {
             child: ElevatedButton(
               onPressed: () {
                 if (_formKey.currentState!.validate()) {
+                  var registration = Registration(name.text, age.text, email.text);
+
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const CheckPage())
+                      MaterialPageRoute(
+                          builder: (context) => CheckPage(registration: registration)
+                      ),
                   );
                 }
               },
@@ -152,7 +164,9 @@ class MyCustomFormState extends State<MyCustomForm> {
 }
 
 class CheckPage extends StatelessWidget {
-  const CheckPage({super.key});
+  const CheckPage({super.key, required this.registration});
+
+  final Registration registration;
 
   @override
   Widget build(BuildContext context) {
@@ -161,11 +175,14 @@ class CheckPage extends StatelessWidget {
         title: const Text('Registration Check'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
+        child: Card(
+          elevation: 0,
+          color: Theme.of(context).colorScheme.surfaceVariant,
+          child: SizedBox(
+            width: 300,
+            height: 100,
+            child: Center(child: Text("Name: ${registration.name}\nAge: ${registration.age}\nEmail: ${registration.email}")),
+          ),
         ),
       ),
     );
