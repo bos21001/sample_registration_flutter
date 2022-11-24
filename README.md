@@ -1,10 +1,10 @@
 # Overview
 
-Hello, welcome to my first flutter repository.
+Hello, and welcome to my first flutter repository.
 
-This repository serve as an initial attempt to build a registration form with flutter to be built with Android, iOs, Web, Windows, Linux and MacOs.
+This repository serves as an attempt to build a registration form with flutter to get built with Android, iOs, Web, Windows, Linux, and macOS.
 
-This is the beginning of my learning path with this language.
+It is the beginning of my learning path with this language.
 
 [Software Demo Video](http://youtube.link.goes.here) >> In progress yet!
 
