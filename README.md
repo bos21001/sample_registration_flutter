@@ -10,9 +10,11 @@ This is the beginning of my learning path with this language.
 
 # Development Environment
 
-Tools utilized:
+### Tools utilized:
 
 * Android Studio
+
+### Programming Languages:
 
 * Flutter
 * Dart
