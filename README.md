@@ -1,16 +1,29 @@
-# sample_registration_flutter
+# Overview
 
-A new Flutter project.
+Hello, welcome to my first flutter repository.
 
-## Getting Started
+This repository serve as an initial attempt to build a registration form with flutter to be built with Android, iOs, Web, Windows, Linux and MacOs.
 
-This project is a starting point for a Flutter application.
+This is the beginning of my learning path with this language.
 
-A few resources to get you started if this is your first Flutter project:
+[Software Demo Video](http://youtube.link.goes.here) >> In progress yet!
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Development Environment
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Tools utilized:
+
+* Android Studio
+
+* Flutter
+* Dart
+
+# Useful Websites
+
+* [Flutter](https://flutter.dev/)
+* [Material Design](https://m2.material.io/)
+
+# Future Work
+
+* Consume APIs to have a real registration in a database
+* Create a login page
+* Make it full responsive
