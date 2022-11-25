@@ -23,7 +23,7 @@ It is the beginning of my learning path with this language.
 4. Run the app in the development mode:
    
    ```
-   npm cd sample_registration_flutter
+   cd sample_registration_flutter
    ```
    
    ```
